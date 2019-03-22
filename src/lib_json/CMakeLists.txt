@@ -86,8 +86,9 @@ endif()
 # Specify compiler features required when compiling a given target.
 # See https://cmake.org/cmake/help/v3.1/prop_gbl/CMAKE_CXX_KNOWN_FEATURES.html#prop_gbl:CMAKE_CXX_KNOWN_FEATURES
 # for complete list of features available
+set (CMAKE_CXX_STANDARD 11)
 target_compile_features(jsoncpp_lib PUBLIC
-        cxx_std_11 # Compiler mode is aware of C++ 11.
+        #cxx_std_11 # Compiler mode is aware of C++ 11.
         #MSVC 1900 cxx_alignas # Alignment control alignas, as defined in N2341.
         #MSVC 1900 cxx_alignof # Alignment control alignof, as defined in N2341.
         #MSVC 1900 cxx_attributes # Generic attributes, as defined in N2761.
